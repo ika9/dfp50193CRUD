@@ -13,9 +13,10 @@ require 'conn.php';
 </head>
 
 <body>
+<a href="register.php">Register</a>
     <table border="1" cellpadding="8" cellspacing="0">
         <tr bgcolor="#ffd700">
-            <th>ID Album</th>
+            <th>ID</th>
             <th>Nama Album</th>
             <th>Harga Album</th>
             <th>Tindakan</th>
@@ -27,6 +28,7 @@ require 'conn.php';
             while ($row = $result->fetch_object()) {
         ?>
                 <tr>
+                    <td>$
                     <td><?php echo $row->id_album; ?></td>
                     <td><?php echo $row->nama_album; ?></td>
                     <td>RM <?php echo $row->harga_album; ?></td>
@@ -42,7 +44,7 @@ require 'conn.php';
         }
         ?>
     </table>
-    <a href="register.php">Register</a>
+
 </body>
 
 </html>

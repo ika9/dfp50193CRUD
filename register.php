@@ -9,7 +9,7 @@
 <body>
 </table <fieldset>
     <legend>Register Form</legend>
-    <form name="frmRegister" method="post" action="simpan.php">
+    <form name="frmRegister" method="post" action="simpan.php" >
        
         <p>
             <label for="albumname">Album Name: </label>
